@@ -1,0 +1,28 @@
+{
+  "name": "react-coding-tasks",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "30 self-contained React debugging/fixing tasks (L4) as an npm workspace — one install, 60 standalone Vite apps.",
+  "workspaces": [
+    "*-Task",
+    "*-Solution"
+  ],
+  "scripts": {
+    "dev": "echo \"Run a single app: npm run dev -w 01-StaleClosure-Task   (or: cd 01-StaleClosure-Task && npm run dev)\" && exit 1",
+    "typecheck:all": "node scripts/typecheck-all.mjs",
+    "build:all": "node scripts/build-all.mjs"
+  },
+  "dependencies": {
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  },
+  "devDependencies": {
+    "@types/node": "^24.12.3",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.12"
+  }
+}
